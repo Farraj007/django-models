@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1 ,h3,li a,a ,input, p{
+h1 ,h2,h3,li a,a ,input, p{
     font-family: Cursive;
 }
 body{
@@ -36,6 +36,13 @@ ul{
     list-style: none;
     display: flex;
     align-items: center;
+
+}
+main ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
 }
 li a{
     display: flex;

@@ -5,11 +5,9 @@
         <ul>
             {% if snack_list %}
             {% for snack in snack_list %}
-                <li>
-                    <br>
-                    <a href="{% url 'snack_detail' pk=snack.pk %}">{{ snack.name }} - {{snack.purchaser}}  </a>
-                     <br>
-                </li>
+            <br>
+            <li><a href="{% url 'snack_detail' pk=snack.pk %}">{{ snack.name }} - {{snack.purchaser}}</a></li>
+            <br>    
             {% endfor %}
             {% else %}
                 <li>No snacks found</li>
